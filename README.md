@@ -7,7 +7,7 @@ A Chrome extension for exploring and analyzing your LinkedIn network connections
 - Automatically extracts connection data from LinkedIn profiles
 - Handles pagination and scrolling automatically
 - Exports connection data to CSV format
-- Supports large networks (500+ connections)
+- Supports large networks 
 - Progress tracking and detailed logging
 - Error handling and retry mechanisms
 
