@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Connection Extractor - Batch 7 (Author: Jon Santillan)",
+  "version": "1.0",
+  "description": "Extract LinkedIn connections data automatically",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.linkedin.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["landing.html", "landing.js", "styles.css"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 

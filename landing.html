@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Connection Extractor - Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>LinkedIn Connection Extractor - Batch 7</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <input type="text" id="profileUrl" placeholder="Enter LinkedIn Profile URL">
+                <button id="startExtraction">Start Extraction</button>
+            </div>
+            <div id="status"></div>
+        </div>
+
+        <div class="progress-section">
+            <h2>Extraction Progress</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <div id="progress-text">0%</div>
+            </div>
+            <div class="stats">
+                <div>Pages Processed: <span id="pages-processed">0</span></div>
+                <div>Connections Found: <span id="connections-found">0</span></div>
+            </div>
+        </div>
+
+        <div class="log-container">
+            <h2>Extraction Log</h2>
+            <div id="log" class="log"></div>
+        </div>
+        <button id="export-data" class="export-button">Export Data</button>
+    </div>
+    <script src="landing.js"></script>
+</body>
+</html> 
